@@ -21,7 +21,6 @@
 		"@trpc/client": "catalog:",
 		"hono": "catalog:",
 		"drizzle-orm": "catalog:",
-		"dotenv": "catalog:",
 		"zod": "catalog:",
 		"@better-t-stack/auth": "workspace:*",
 		"@better-t-stack/db": "workspace:*"

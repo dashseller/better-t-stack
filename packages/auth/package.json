@@ -18,7 +18,6 @@
 	},
 	"dependencies": {
 		"better-auth": "catalog:",
-		"dotenv": "catalog:",
 		"zod": "catalog:",
 		"@better-t-stack/db": "workspace:*"
 	}
