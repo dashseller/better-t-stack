@@ -1,5 +1,8 @@
 "use client";
 
+import { useMutation, useQuery } from "@tanstack/react-query";
+import { Loader2, Trash2 } from "lucide-react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
 	Card,
@@ -10,10 +13,6 @@ import {
 } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
-import { Loader2, Trash2 } from "lucide-react";
-import { useState } from "react";
-
-import { useMutation, useQuery } from "@tanstack/react-query";
 import { trpc } from "@/utils/trpc";
 
 export default function TodosPage() {
@@ -111,7 +110,7 @@ export default function TodosPage() {
 										/>
 										<label
 											htmlFor={`todo-${todo.id}`}
-											className={`${todo.completed ? "line-through text-muted-foreground" : ""}`}
+											className={`${todo.completed ? "text-muted-foreground line-through" : ""}`}
 										>
 											{todo.text}
 										</label>
