@@ -35,4 +35,8 @@ app.get("/", (c) => {
 	return c.text("OK");
 });
 
+app.get("/debug-cors", (c) => {
+	return c.json({ corsOrigin: process.env.CORS_ORIGIN || "NOT SET" });
+});
+
 export default app;
