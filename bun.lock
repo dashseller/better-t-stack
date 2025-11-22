@@ -79,7 +79,6 @@
         "@better-t-stack/db": "workspace:*",
         "@trpc/client": "catalog:",
         "@trpc/server": "catalog:",
-        "dotenv": "catalog:",
         "drizzle-orm": "catalog:",
         "hono": "catalog:",
         "zod": "catalog:",
@@ -96,7 +95,6 @@
       "dependencies": {
         "@better-t-stack/db": "workspace:*",
         "better-auth": "catalog:",
-        "dotenv": "catalog:",
         "zod": "catalog:",
       },
       "devDependencies": {
