@@ -1,4 +1,3 @@
-import "dotenv/config";
 import { createContext } from "@better-t-stack/api/context";
 import { appRouter } from "@better-t-stack/api/routers/index";
 import { auth } from "@better-t-stack/auth";
@@ -34,6 +33,10 @@ app.use(
 
 app.get("/", (c) => {
 	return c.text("OK");
+});
+
+app.get("/debug-cors", (c) => {
+	return c.json({ corsOrigin: process.env.CORS_ORIGIN || "NOT SET" });
 });
 
 export default app;
