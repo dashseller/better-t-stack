@@ -1,8 +1,7 @@
-import "dotenv/config";
-import { trpcServer } from "@hono/trpc-server";
 import { createContext } from "@better-t-stack/api/context";
 import { appRouter } from "@better-t-stack/api/routers/index";
 import { auth } from "@better-t-stack/auth";
+import { trpcServer } from "@hono/trpc-server";
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { logger } from "hono/logger";
