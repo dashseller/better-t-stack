@@ -20,7 +20,8 @@
 		"start": {
 			"dependsOn": ["build"],
 			"cache": false,
-			"persistent": true
+			"persistent": true,
+			"passThroughEnv": ["*"]
 		},
 		"db:push": {
 			"cache": false,
